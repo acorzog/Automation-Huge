@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1550506325742' stop='1550506342155'>
+    <name>Test that the button is clickable once the Ajax loader completed loading</name>
+    <title>Test that the button is clickable once the Ajax loader completed loading</title>
+    <test-cases>
+        <test-case start='1550506325743' status='broken' stop='1550506328026'>
+            <name>Attempt to click the button ASAP</name>
+            <title>Attempt to click the button ASAP</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/acorzo/Documents/Automation/webDriverIOFramework/tests/ajaxClickTest.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='55d780e8-29eb-436f-b531-51f8797bad03-attachment.png' type='image/png' size='22089'/>
+            </attachments>
+            <failure>
+                <message>An element could not be located on the page using the given search parameters.</message>
+                <stack-trace>Error: An element could not be located on the page using the given search parameters.
+                    at click("#ajax-loader") - at element("#ajax-loader") - click.js:12:17</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1550506328026' status='passed' stop='1550506342155'>
+            <name>Attempt to click the button after 7 seconds</name>
+            <title>Attempt to click the button after 7 seconds</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/acorzo/Documents/Automation/webDriverIOFramework/tests/ajaxClickTest.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
